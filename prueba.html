@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego</title>
+	<style type="text/css"> 
+		button{width: 150px; height: 50px; border-style: dashed; font-size: larger; font-family: serif; font-style: italic; color: gray;}
+		input{width: 200px; height: 30px; border-style: groove; font-size: large; font-family: serif; font-style: italic; text-align: center; color: gray;}
+		label{width: 200px; height: 30px; font-size: large; font-family: serif; font-style: italic;}
+		body{color: gray; background-color: white;}
+		#mt{position: absolute; top: 50px; left: 150px;}
+		#cl{position: absolute; top: 140px; left: 150px;}
+		#cm{position: absolute; top: 290px; left: 150px;}
+		#botonInicio{position: absolute; top: 60px; left: 400px;}
+		#botonInicio2{position: absolute; top: 160px; left: 400px;}
+		#botonEstado{position: absolute; top: 370px; left: 150px}
+		#botonBatalla{position: absolute; top: 370px; left: 350px}
+		#botonCurar{position: absolute; top: 450px; left: 150px}
+		#botonRecargar{position: absolute; top: 450px; left: 350px}
+
+	</style>
+</head>
+<body>
+
+<label id="mt"> Mote. <input type="text" id="txt"></label>
+<label id="cl"> Clase. <input type="text" id="txt2"></label>
+<button id="botonInicio" onclick="iniciar()"> Registar 1 </button>
+<button id="botonInicio2" onclick="iniciar2()"> Registar 2 </button>
+
+<label id="cm"> Comandos. </label>
+<button id="botonEstado" onclick="estado()"> Estado </button>
+<button id="botonBatalla" onclick="batallaClick()"> Batalla </button>
+<button id="botonCurar" onclick="curarClick()"> Curar </button>
+<button id="botonRecargar" onclick="recargarClick()"> Recargar </button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
